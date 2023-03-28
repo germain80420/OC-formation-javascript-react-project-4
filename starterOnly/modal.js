@@ -65,8 +65,10 @@ listCheckbox.forEach((btn) => btn.addEventListener("click", function () {
 btnClose.addEventListener("click", closeModal);
 
 btnCloseInfoSuccess.addEventListener("click", function(){
+  let url = window.location;
+  url = url.href.substring(0,url.href.length-window.location.search.length);
   //on redirige vers la page d'acceuil après l'affichage du message de validation de l'inscription
-  document.location.href="/starterOnly/";  
+  document.location.href = url;  
 } );
 // launch modal form
 function launchModal() {
