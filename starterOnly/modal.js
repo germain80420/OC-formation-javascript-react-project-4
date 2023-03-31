@@ -112,7 +112,7 @@ function checkValidity(inputTested, spanError) {
     case "text":
       //on défini la valeur du booleen isValid avec la condition
       //si le nb de caractere entré est >= au nombre de caractere minLength défini ds le html isValue = true sinon isValue = false 
-      isValid = inputTested.value.length >= inputTested.minLength;
+      isValid = inputTested.value.trim().length >= inputTested.minLength;
       //on défini le texte d'erreur à afficher 
       //une condition ternaire permet de définir si l'input testé correspond au prénom(first) ou au nom
       messageError = "Le " + ((inputTested.name == "first") ? "prénom" : "nom") + " doit etre composé d'au moins 2 lettres";

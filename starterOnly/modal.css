@@ -452,7 +452,7 @@ input[data-error]::after {
 .hero-headline {
   font-size: 6rem;
   font-weight: normal;
-  white-space: nowrap;
+  white-space:normal;
 }
 .hero-text {
   width: 146%;
@@ -542,7 +542,6 @@ footer {
     text-align: center;
   }
 }
-
 
 @keyframes modalopen {
   from {
